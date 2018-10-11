@@ -36,11 +36,6 @@ body {
     transition: all 1000ms;
 }
 
-.showcase:hover::after {
-    filter: blur(0px);
-    -webkit-filter: blur(0px);
-}
-
 .conteudo {
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     position: absolute;
