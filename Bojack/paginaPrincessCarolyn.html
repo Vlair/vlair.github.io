@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Personagem Princess Carolyn</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatble" content="IE-Edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Bojack, Bojack Horseman, bojak, serie homem cavalo, fanfic, fanpage bojack horseman, netflix seriados, desenhos adultos">
+        <meta name="description" content="Este site possui um conteudo do seriado Bojack Horseman.">
+        <meta name="author" content="João Arthur Rocha e Vlair Simas Reis">
+        
+        <link rel="shortcut icon" href="img/icon.png" type="image/x-icon" />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/magnific-popup.css"/>
+        <link rel="stylesheet" type="text/css" href="css/estilo01.css">
+        <link rel="stylesheet" type="text/css" href="css/estiloPersonagens.css">
+
+        <script type="text/javascript" src="js/jquery-3.0.0.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
+        <script type="text/javascript" src="js/mailcheck.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <script type="text/javascript" src="js/scripts.js"></script>
+
+    </head>
+    <body onscroll="menuTopo($(window))">
+        <div>
+            <header id="logo">
+                <a href="index.html"><img src="img/logoheader.png" alt="BoJack " style="width:100%;"></a>
+            </header>
+            <nav class=" navbar-inverse" id="menuNav">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="container-fluid collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Página Inicial</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Personagens
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="paginaBojack.html">BoJack Horseman</a></li>
+                                <li class="divider"><a href="#"></a></li>
+                                <li><a href="paginaTodd.html">Todd Chavez</a></li>
+                                <li class="divider"><a href="#"></a></li>
+                                <li><a href="paginaPrincessCarolyn.html">Princess Carolyn</a></li>
+                                <li class="divider"><a href="#"></a></li>
+                                <li><a href="paginaDiane.html">Diane Nguyen</a></li>
+                                <li class="divider"><a href="#"></a></li>
+                                <li><a href="paginaPeanutbutter.html">Mr Peanutbutter</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Temporadas
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="primeiraTemporada.html">Primeira Temporada</a></li>
+                                <li class="divider"><a href="#"></a></li>
+                                <li><a href="segundaTemporada.html">Segunda Temporada</a></li>
+                                <li class="divider"><a href="#"></a></li>
+                                <li><a href="terceiraTemporada.html">Terceira Temporada</a></li>
+                                <li class="divider"><a href="#"></a></li>
+                                <li><a href="quartaTemporada.html">Quarta Temporada</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="popup-with-form" href="#contato">Contato</a></li>
+                        <li><a href="mensagens.html">Mensagens</a></li>
+                        <li><a href="paginaSobre.html">Sobre</a></li>
+                    </ul>
+                </div>
+                <div ng-app="contato" ng-controller="msgcontroller">
+                    <form name="form" id="contato" class="white-popup-block mfp-hide form-style-8"
+                          method="post" action="#">
+                        <h2>Deixe-nos uma mensagem!</h2>
+                        <fieldset style="border:0;">
+                            <input required ng-model="nome" type="text" name="nome" id="nome" onblur="validarNome(this)" placeholder="Nome Completo" title="Preencha o seu nome." x-moz-errormessage="Preencha o seu nome."/>
+                            <input required ng-model="email" type="email" class="mailcheck" name="email" id="email" onblur="validarEmail(this)" placeholder="Email" title="Preencha o seu email." x-moz-errormessage="Preencha o seu email."/>
+                            <textarea required ng-model="mensagem" name="mensagem" id="mensagem" placeholder="Sua Mensagem" onkeydown="adjust_textarea(this)" title="Preencha a sua mensagem." x-moz-errormessage="Preencha a sua mensagem."></textarea>
+                            <input name="btnInsert" type="submit" value="Enviar Mensagem" ng-click="enviarMensagem()"/>
+                        </fieldset>
+                    </form>
+                </div>
+            </nav>
+            <section>
+                <div class="container divPersonagem">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                            <h1>Sobre Princess Carolyn:</h1>
+                            <p class="text-justify texto1">
+                                Carolyn é a agente de <a  href="paginaBojack.html">BoJack Horseman</a> que se mata pra conseguir uma boa oportunidade de atuação a troco de salvar sua carreira como agente. Carolyn é desprezada ao longo da série, mas sabe que <a  href="paginaBojack.html">BoJack </a>necessita dela pra conseguir chegar em seus objetivos. A personagem felina é um personagem interessante, já que está sempre à procura de um relacionamento legal, e sempre se ferra no processo.
+                            </p>
+                            <img class="center-block" src="img/paginaCarolyn.gif" alt="Imagem animada Princess Carolyn" style="width:100%;">
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer class=" navbar-inverse">
+                <span class="text-justify">Developed by: João Arthur e Vlair Simas - SarraTeamTec.</span>
+            </footer>
+        </div>
+    </body>
+</html>
+

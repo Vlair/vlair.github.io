@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Primeira temporada</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatble" content="IE-Edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Bojack, Bojack Horseman, bojak, serie homem cavalo, fanfic, fanpage bojack horseman, netflix seriados, desenhos adultos">
+        <meta name="description" content="Este site possui um conteudo do seriado Bojack Horseman.">
+        <meta name="author" content="João Arthur Rocha e Vlair Simas Reis">
+        
+        <link rel="shortcut icon" href="img/icon.png" type="image/x-icon" />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/magnific-popup.css"/>
+        <link rel="stylesheet" type="text/css" href="css/estilo01.css"/>
+
+        <script type="text/javascript" src="js/jquery-3.0.0.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
+        <script type="text/javascript" src="js/mailcheck.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <script type="text/javascript" src="js/scripts.js"></script>
+
+    </head>
+    <body onscroll="menuTopo($(window))">
+        <div>
+            <header id="logo">
+                <a href="index.html"><img src="img/logoheader.png" alt="BoJack " style="width:100%;"></a>
+            </header>
+            <nav class=" navbar-inverse" id="menuNav">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="container-fluid collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Página Inicial</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Personagens
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="paginaBojack.html">BoJack Horseman</a></li>
+                                <li class="divider"><a href="#"></a></li>
+                                <li><a href="paginaTodd.html">Todd Chavez</a></li>
+                                <li class="divider"><a href="#"></a></li>
+                                <li><a href="paginaPrincessCarolyn.html">Princess Carolyn</a></li>
+                                <li class="divider"><a href="#"></a></li>
+                                <li><a href="paginaDiane.html">Diane Nguyen</a></li>
+                                <li class="divider"><a href="#"></a></li>
+                                <li><a href="paginaPeanutbutter.html">Mr Peanutbutter</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Temporadas
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="primeiraTemporada.html">Primeira Temporada</a></li>
+                                <li class="divider"><a href="#"></a></li>
+                                <li><a href="segundaTemporada.html">Segunda Temporada</a></li>
+                                <li class="divider"><a href="#"></a></li>
+                                <li><a href="terceiraTemporada.html">Terceira Temporada</a></li>
+                                <li class="divider"><a href="#"></a></li>
+                                <li><a href="quartaTemporada.html">Quarta Temporada</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="popup-with-form" href="#contato">Contato</a></li>
+                        <li><a href="mensagens.html">Mensagens</a></li>
+                        <li><a href="paginaSobre.html">Sobre</a></li>
+                    </ul>
+                </div>
+                <div ng-app="contato" ng-controller="msgcontroller">
+                    <form name="form" id="contato" class="white-popup-block mfp-hide form-style-8"
+                          method="post" action="#">
+                        <h2>Deixe-nos uma mensagem!</h2>
+                        <fieldset style="border:0;">
+                            <input required ng-model="nome" type="text" name="nome" id="nome" onblur="validarNome(this)" placeholder="Nome Completo" title="Preencha o seu nome." x-moz-errormessage="Preencha o seu nome."/>
+                            <input required ng-model="email" type="email" class="mailcheck" name="email" id="email" onblur="validarEmail(this)" placeholder="Email" title="Preencha o seu email." x-moz-errormessage="Preencha o seu email."/>
+                            <textarea required ng-model="mensagem" name="mensagem" id="mensagem" placeholder="Sua Mensagem" onkeydown="adjust_textarea(this)" title="Preencha a sua mensagem." x-moz-errormessage="Preencha a sua mensagem."></textarea>
+                            <input name="btnInsert" type="submit" value="Enviar Mensagem" ng-click="enviarMensagem()"/>
+                        </fieldset>
+                    </form>
+                </div>
+            </nav>
+            <section>
+                <div class="container todas">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                            <h1>Primeira Temporada</h1>
+                            <p class="text-justify texto1">
+                                A história fala sobre o próprio BoJack que, nos anos 90, era muito famoso por fazer um seriado de comédia na televisão, chamado de “Horsin’ Around”, algo parecido com “The Fresh Prince of Bel-Air” ou “The Middle”. Foi o auge de sua carreira, ele tinha fãs e amava ser o centro das atenções. Porém, quando o programa foi cancelado, sua vida foi ao fracasso. Apegado a essa época de sua vida, 20 anos depois, ele ainda assiste as fitas de gravação, amaciando seu ego que ninguém mais se importa.
+
+                                Para tentar restaurar a sua fama de volta, BoJack diz que vai escrever uma biografia, mas simplesmente não consegue. Para resolver essa questão, ele contrata a Diane, uma moça de cabelos azuis que é conhecida por ser uma escritora-fantasma. Sendo assim, ela começa a conviver com ele para melhor retratá-lo e conseguir fazer um livro sincero.
+
+                                Tudo isso com uma maravilhosa evolução de personagem enquanto BoJack abre os olhos para reconhecer quem ele era naquela época e quem ele realmente é agora, depois de todo desastre na sua vida profissional.
+                            </p>
+
+                            <img class="center-block" src="img/bojack_chuva.gif" alt="Imagem animada" style="width:100%;">
+                            <p class="text-justify texto2">
+
+                                BoJack Horseman é cheia de referências pop, piadas escatológicas e ótimo desenvolvimento de personagens, motivações e personalidades. Além disso, tem um roteiro tão bom que é capaz de criar momentos cômicos e dramáticos com a mesma qualidade e facilidade (sim, temos momentos dramáticos!).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer class=" navbar-inverse">
+                <span class="text-justify">Developed by: João Arthur e Vlair Simas - SarraTeamTec.</span>
+            </footer>
+        </div>
+
+    </body>
+</html>

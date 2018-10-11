@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Terceira temporada</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatble" content="IE-Edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Bojack, Bojack Horseman, bojak, serie homem cavalo, fanfic, fanpage bojack horseman, netflix seriados, desenhos adultos">
+        <meta name="description" content="Este site possui um conteudo do seriado Bojack Horseman.">
+        <meta name="author" content="João Arthur Rocha e Vlair Simas Reis">
+
+        <link rel="shortcut icon" href="img/icon.png" type="image/x-icon" />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/magnific-popup.css"/>
+        <link rel="stylesheet" type="text/css" href="css/estilo01.css"/>
+
+        <script type="text/javascript" src="js/jquery-3.0.0.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
+        <script type="text/javascript" src="js/mailcheck.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <script type="text/javascript" src="js/scripts.js"></script>
+
+    </head>
+    <body onscroll="menuTopo($(window))">
+        <div>
+            <header id="logo">
+                <a href="index.html"><img src="img/logoheader.png" alt="BoJack " style="width:100%;"></a>
+            </header>
+            <nav class=" navbar-inverse" id="menuNav">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="container-fluid collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Página Inicial</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Personagens
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="paginaBojack.html">BoJack Horseman</a></li>
+                                <li class="divider"><a href="#"></a></li>
+                                <li><a href="paginaTodd.html">Todd Chavez</a></li>
+                                <li class="divider"><a href="#"></a></li>
+                                <li><a href="paginaPrincessCarolyn.html">Princess Carolyn</a></li>
+                                <li class="divider"><a href="#"></a></li>
+                                <li><a href="paginaDiane.html">Diane Nguyen</a></li>
+                                <li class="divider"><a href="#"></a></li>
+                                <li><a href="paginaPeanutbutter.html">Mr Peanutbutter</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Temporadas
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="primeiraTemporada.html">Primeira Temporada</a></li>
+                                <li class="divider"><a href="#"></a></li>
+                                <li><a href="segundaTemporada.html">Segunda Temporada</a></li>
+                                <li class="divider"><a href="#"></a></li>
+                                <li><a href="terceiraTemporada.html">Terceira Temporada</a></li>
+                                <li class="divider"><a href="#"></a></li>
+                                <li><a href="quartaTemporada.html">Quarta Temporada</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="popup-with-form" href="#contato">Contato</a></li>
+                        <li><a href="mensagens.html">Mensagens</a></li>
+                        <li><a href="paginaSobre.html">Sobre</a></li>
+                    </ul>
+                </div>
+                <div ng-app="contato" ng-controller="msgcontroller">
+                    <form name="form" id="contato" class="white-popup-block mfp-hide form-style-8"
+                          method="post" action="#">
+                        <h2>Deixe-nos uma mensagem!</h2>
+                        <fieldset style="border:0;">
+                            <input required ng-model="nome" type="text" name="nome" id="nome" onblur="validarNome(this)" placeholder="Nome Completo" title="Preencha o seu nome." x-moz-errormessage="Preencha o seu nome."/>
+                            <input required ng-model="email" type="email" class="mailcheck" name="email" id="email" onblur="validarEmail(this)" placeholder="Email" title="Preencha o seu email." x-moz-errormessage="Preencha o seu email."/>
+                            <textarea required ng-model="mensagem" name="mensagem" id="mensagem" placeholder="Sua Mensagem" onkeydown="adjust_textarea(this)" title="Preencha a sua mensagem." x-moz-errormessage="Preencha a sua mensagem."></textarea>
+                            <input name="btnInsert" type="submit" value="Enviar Mensagem" ng-click="enviarMensagem()"/>
+                        </fieldset>
+                    </form>
+                </div>
+            </nav>
+            <section>
+                <div class="container todas">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                            <h1>Terceira Temporada</h1>
+                            <p class="text-justify texto1">
+                                O cartaz desta temporada, traz uma lista de nomes, comparando BoJack a Tony Soprano (The Sopranos), Don Draper (Mad Men) e Frank Underwood (House of Cards), todos anti-heróis de suas séries, que conseguem fazer com que o telespectador sinta raiva de ações feitas pelas personagens (como as diversas vezes que Don Draper trai a sua mulher), mas que também fazem você sentir pena e a torcer para eles em algum momento (como as vezes que você torce para Walter White conseguir se dar bem com seu negócio ilegal), e BoJack consegue se igualar a eles nesse quesito, o personagem prova ser um escroto diversas vezes (ficando com a amiga de Todd), mas faz você sentir pena em alguns momentos (como sua despedida de um filhote marinho). Outra relação estabelecida entre Tony Soprano e BoJack, é a terapia. Enquanto o mafioso tinha horário marcado com sua terapeuta toda semana, BoJack passa a fazer ligações para conversar com uma mulher que dá conselhos a ele.
+                            </p>
+                            <p class="text-justify texto2">
+                                O ponto mais forte da série em todas suas temporadas, são os assuntos que tratados, como depressão e alcoolismo. Este ano, a série continua com essa carga em cima de BoJack, trazendo tudo que ele carrega desde o final da segunda temporada. Alguns episódios conseguem abordar assuntos polêmicos atuais, como o feminismo e a discussão do certo e errado do aborto. No sexto episódio (“Tat-Tat, Pum Pum”) é falado sobre o aborto, e em uma cena onde faz uma clara critica a situação atual, onde um apresentador de um programa está discutindo sobre isso, e para isso, ele chama “três homens brancos de terno” (a frase é dita pelo apresentador), para dar a opinião deles sobre o tema, que acabam não concordando com o ato de abortar, e acham “que não é um problema de mulheres”. Outro assunto tratado é a burocracia nos bastidores do marketing e da campanha de divulgação de um filme, onde BoJack é muitas vezes controlado pelos seus agentes.
+                            </p>
+
+
+                            <img class="center-block" src="img/bojackNadando.gif" alt="Imagem animada" style="width:100%;">
+                            <p class="text-justify texto3">
+                                Os últimos três episódios da temporada conseguem formam uma sequência de ótimos momentos. Focando totalmente em BoJack e como ele lida com seus problemas, não conseguindo aceitar o que seus amigos falam sobre ele estar se importando só com ele mesmo, não ligando se suas ações vão ou não magoar os outros, não ligando se ele está levando outras pessoas para o fundo do poço com ele, não ligando que existem pessoas a sua volta que se importam com ele. A cena final da temporada revela que BoJack não fez a única coisa que devia ter feito na sua vida, ser um cavalo. A comparação da cena fica com as pessoas que esquecem de ser “humanas”, que assim como BoJack, passam a se importar com coisas superficiais e que deixa de lado as pessoas importantes que estão sempre por perto, tentando ajudar. Destaque especial para o episódio quatro, "Peixe Fora D’água", onde os diálogos falados são limitadíssimos devido ao fato de BoJack ir na première de Secretariat em uma cidade embaixo d'água, deixando-o com um capacete que permite sua respiração lá embaixo, mas não permite a fala. Durante esse capítulo, BoJack cria uma relação com um filhote de cavalo marinho, e parte em uma jornada para devolvê-lo ao seu pai. O ponto positivo deste episódio é que, em seu roteiro, o criador consegue fazer com que piadas e momentos emocionantes funcionem sem falas, apenas com as expressões das personagens e suas situações.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer class=" navbar-inverse">
+                <span class="text-justify">Developed by: João Arthur e Vlair Simas - SarraTeamTec.</span>
+            </footer>
+        </div>
+
+    </body>
+</html>

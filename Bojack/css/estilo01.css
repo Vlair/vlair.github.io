@@ -1,0 +1,323 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10/07/2017, 11:06:32
+    Author     : Aluno
+*/
+/** CORPO DA PAGINA ----------------------------------------------------------------------------**/
+body{
+    background-color: #004D40;
+    /* background-image: url("../img/background.jpg"); */
+    font-size: 15px;
+}
+
+section .container{
+    max-width: 65%;
+    background-color: rgb(34,34,34);
+    margin-top: 10px;
+}
+
+footer{
+    color: gray;
+    padding-left: 0.66em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+}
+
+
+
+section h2{
+    color: white;
+    /* position: relative;
+    float: left; */
+    text-align: left;
+    padding-top: 10px;
+    margin-top: 10px;
+    clear: both;
+    color: #FFF8E1;
+}
+
+header{
+    background-color: #222;
+}
+
+section .topo{
+    padding-top: 50px;
+}
+
+.fixar {
+    position:fixed;
+    margin-top: 0px !important;
+}
+
+section .todas{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.dadosUsuario{
+    padding: 10px 0;
+    margin-bottom: 15px;
+}
+
+.tabela{
+    max-width: 100%;
+    white-space: normal;
+    display: block;
+    word-wrap: break-word;
+}
+
+.tabela tbody tr{
+    max-width:100%;
+    white-space: normal;
+    display: block;
+    word-wrap: break-word;
+}
+.tabela tbody tr td{
+    max-width:100%;
+    white-space: normal;
+    display: block;
+    word-wrap: break-word;
+}
+
+.mensagem{
+    max-width: 100%;
+    white-space: normal;
+    display: block;
+    word-wrap: break-word;
+}
+
+/** TEXTOS ----------------------------------------------------------------------------**/
+
+section{
+    line-height: 1.33em;
+    letter-spacing: 0.08em;
+    font-family: sans-serif;
+    color: #CCC;
+}
+section .texto{
+    background-color: rgb(34,34,34);
+    margin-top: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+section .texto1{
+    margin-top: 10px;
+    /* position: relative;
+    float: left; */
+    max-width: 100%;
+}
+
+section .texto2{
+    /* position: relative;
+    float: right; */
+    max-width: 100%;
+    margin-top: 10px;
+    clear: both;
+}
+
+section .texto3{
+    /* position: relative;
+    float: left; */
+    max-width: 100%;
+    margin-top: 10px;
+    clear: both;
+
+}
+
+.texto-riscado{
+    text-decoration: line-through;
+}
+
+strong{
+    color: #FFF8E1;
+    font-size: 1.15em;
+}
+
+.usuario{
+    font-weight: bold;
+    font-size: 1.2em;
+    color: white;
+}
+
+.email{
+    font-weight: bold;
+    font-size: 0.9em;
+    color: white;
+}
+
+.mensagem{
+    margin-top: 15px;
+    margin-left: 2em;
+}
+
+h4{text-align: center;}
+
+/** FORMULARIO -----------------------------------------------------------------------**/
+.form-style-8{
+    font-family: 'Open Sans Condensed', arial, sans;
+    width: 500px;
+    padding: 30px;
+    background: #FFFFFF;
+    margin: 50px auto;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    -webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+
+}
+.form-style-8 h2{
+    background: #4D4D4D;
+    text-transform: uppercase;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #797979;
+    font-size: 18px;
+    font-weight: 100;
+    padding: 20px;
+    margin: -30px -30px 30px -30px;
+}
+.form-style-8 input[type="text"],
+.form-style-8 input[type="date"],
+.form-style-8 input[type="datetime"],
+.form-style-8 input[type="email"],
+.form-style-8 input[type="number"],
+.form-style-8 input[type="search"],
+.form-style-8 input[type="time"],
+.form-style-8 input[type="url"],
+.form-style-8 input[type="password"],
+.form-style-8 textarea,
+.form-style-8 select 
+{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    background: transparent;
+    margin-bottom: 10px;
+    font: 16px Arial, Helvetica, sans-serif;
+    height: 45px;
+}
+.form-style-8 textarea{
+    resize:none;
+    overflow: hidden;
+}
+.form-style-8 input[type="button"], 
+.form-style-8 input[type="submit"]{
+    -moz-box-shadow: inset 0px 1px 0px 0px #45D6D6;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #45D6D6;
+    box-shadow: inset 0px 1px 0px 0px #45D6D6;
+    background-color: #2CBBBB;
+    border: 1px solid #27A0A0;
+    display: inline-block;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 14px;
+    padding: 8px 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.form-style-8 input[type="button"]:hover, 
+.form-style-8 input[type="submit"]:hover {
+    background:linear-gradient(to bottom, #34CACA 5%, #30C9C9 100%);
+    background-color:#34CACA;
+}
+/** BORDA ----------------------------------------------------------------------------**/
+
+section .topo{
+    border-radius: 10px 10px 0 0;
+}
+
+section .texto{
+    border-radius: 0 0 10px 10px;
+}
+
+section .todas{
+    border-radius: 10px 10px;
+}
+
+/* GIF */
+section img{
+    /* position: relative;
+    float: left; */ 
+    max-width: 70%;
+    height: 70%;
+    border-radius: 3px;
+}
+
+/* MEDIA QUERY */
+
+
+@media screen and (max-width: 1024px){
+    section .texto{
+        background-color: #222;
+        margin-top: -10px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    body{
+        font-size: 1.4em;  
+    }
+}
+
+@media screen and (max-width: 768px){
+    section .container{
+        max-width: 100%;
+        background-color: #222;
+        margin-top: 10px;
+    }
+
+    section .texto{
+        background-color: #222;
+        margin-top: -10px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    section img{  
+        max-width: 60%;
+        height: 60%;
+
+    }
+    
+    body{
+        font-size: 1.4em;  
+    }
+}
+
+
+@media screen and (max-width: 360px){
+    h2{
+        font-size: 1.6em;
+    }
+    
+    body{
+        font-size: 1.4em;  
+    }
+    
+    footer span{
+        font-size: 0.9em; 
+    }
+}
+
+
+@media screen and (max-width: 330px){
+    h2{
+        font-size: 1.5em;
+    }
+    
+    
+    footer span{
+        font-size: 0.7em; 
+    }
+}
