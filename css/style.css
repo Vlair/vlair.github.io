@@ -61,10 +61,13 @@ body{
   font-family: 'Archivo', sans-serif;
 
   background-image: url("../images/background.jpg");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  height: 100% auto;
+  width: 100% auto;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  background-attachment: fixed;
 }
 
 section{
