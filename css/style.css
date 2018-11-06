@@ -61,7 +61,8 @@ body{
   font-family: 'Archivo', sans-serif;
 
   background-image: url("../images/background.jpg");
-  height: 100% auto;
+  max-height: 100%;
+  width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
