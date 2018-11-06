@@ -62,7 +62,7 @@ body{
 
   background-image: url("../images/background.jpg");
   max-height: 100%;
-  width: 100%;
+  width: 100% auto;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
